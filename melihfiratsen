@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class Test {
+	public static void main(String[] args) {
+		/**
+		 * @author M. Firat Sen, 2022
+		 */
+		double edge_one, edge_two, edge_three, area,u;
+		// 2u : environment of triangle
+		Scanner input = new Scanner(System.in);
+		System.out.println("First Edge : ");
+		edge_one = input.nextDouble();
+		System.out.println("Second Edge : ");
+		edge_two = input.nextDouble();
+		System.out.println("Third Edge : ");
+		edge_three = input.nextDouble();
+		u = (edge_one + edge_two + edge_three)/2;
+		area = Math.sqrt(u*(u - edge_one)*(u-edge_two)*(u-edge_three));
+		System.out.println(area);
+	}
+}
